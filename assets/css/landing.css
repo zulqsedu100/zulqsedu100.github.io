@@ -31,6 +31,29 @@ nav {
     border-bottom: 4px solid var(--cyan);
 }
 
+.page404 {
+    background-color: white;
+    margin: 20px 250px;
+    border-radius: 10px;
+    position: relative;
+} .page404 p {
+    margin-top: 0px;
+    font-size: 30px; font-weight: 600;
+    text-align: center;
+} .page404:nth-child(2) {
+    top: 0; left: 0; right: 0;
+    background-color: #FC5130;
+}
+
+
+.animatebig {
+    width: 40%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .nama {
     font-weight: 900;
     font-size: 30px;
@@ -126,10 +149,10 @@ nav {
     text-align: left;
     padding-right: 80px;
     font-size: 100%;
-} .boxhi {
+} /*.boxhi {
     background-color: var(--jet);
     border-radius: 6px;
-}
+} */
 
 .container img {
     width: 19%;
