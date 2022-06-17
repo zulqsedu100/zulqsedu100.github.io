@@ -31,20 +31,47 @@ nav {
     border-bottom: 4px solid var(--cyan);
 }
 
-.page404 {
-    background-color: white;
-    margin: 20px 250px;
-    border-radius: 10px;
-    position: relative;
-} .page404 p {
-    margin-top: 0px;
-    font-size: 30px; font-weight: 600;
-    text-align: center;
-} .page404:nth-child(2) {
-    top: 0; left: 0; right: 0;
-    background-color: #FC5130;
+.midnav {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
+.top404 {
+    background-color: #d9d9d9;
+    margin: 20px 250px 0 250px;
+    padding: 4px 4px 4px 15px;
+    border-top-left-radius: 10px; border-top-right-radius: 10px;
+    position: relative;
+} .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #ff6058;
+    border-radius: 50%;
+    display: inline-block;
+    filter: drop-shadow(0 0 2px #ff6058);
+} .dot:nth-child(2) {
+    background-color: #ffbd2e;
+    filter: drop-shadow(0 0 2px #ffbd2e);
+} .dot:nth-child(3) {
+    background-color: #28ca40;
+    filter: drop-shadow(0 0 2px #28ca40);
+}
+
+.isi404 {
+    background-color: white;
+    margin: 0 250px 0 250px;
+    border-bottom: 10px;
+    position: relative;
+    filter: drop-shadow(0 0 8px white);
+    border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;
+} p {
+    margin-top: 0px; margin-bottom: 0px;
+    font-size: 30px; font-weight: 600;
+    text-align: center;
+}
 
 .animatebig {
     width: 40%;
@@ -172,7 +199,7 @@ nav {
     }
 }
 
-@media screen and (min-width: 700px;) {
+@media screen and (min-width: 700px) {
     .container p {
         font-size: 200px;
     }
