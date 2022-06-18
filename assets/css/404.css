@@ -14,7 +14,6 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translateY(-50%);
     transform: translate(-50%, -50%);
     margin: auto;
     width: 800px;
@@ -38,10 +37,6 @@ html {
 } .dot:nth-child(3) {
     background-color: #28ca40;
     filter: drop-shadow(0 0 2px #28ca40);
-} .top404 span:nth-child(4) {
-    text-align: center;
-    font-size: 10px;
-    margin: 0;
 }
 
 .container404 {
@@ -54,7 +49,7 @@ html {
     display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
-}
+} 
 
 .container2404 {
     display: flex;
@@ -99,7 +94,46 @@ p {
     border-bottom: 4px solid #d9d9d9;
 } 
 
+@media screen and (max-width: 415px) {  
 
+    .midnav {
+      max-width: 300px;
+    }
+
+    .container404 {
+    padding: 30px 20px;
+    flex-direction: column;
+    }
+
+    .container2404 {
+      display: inline-flex;
+      flex-direction: column;
+    }
+    
+    p {
+      margin-left: 0px;
+    }
+    .container2404 p:nth-child(1) {
+      font-size: 60px;
+      text-align: center;
+      margin-bottom: 0px;
+    } .container2404 p:nth-child(2) {
+      font-size: 97%;
+      text-align: center;
+    } .container2404 p:nth-child(3) {
+      font-size: 13px;
+      text-align: justify;
+    }
+
+    .animatebig {
+      width: auto;
+      height: 120px;
+    }
+
+    .container2404 a {
+      margin-left: auto; margin-right: auto;
+    }
+}
 
 /* STARS BACKGROUND */
   #stars {

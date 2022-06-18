@@ -22,13 +22,17 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1280px;
-} 
+}  
 nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     border-bottom: 4px solid var(--cyan);
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+} nav:hover {
+    filter: drop-shadow(0 4px 4px var(--cyan));
 }
 
 .nama {
